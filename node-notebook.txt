@@ -1,0 +1,31 @@
+对于时间日期等，需要格式化，可以用filter,也可以用moment.js,专门处理时间日期的库
+图片懒加载，可以使得移动端用户在滑动屏幕时，再加载，节约性能与损耗-------mint-ui
+
+this.$route.params.id  
+
+
+
+
+node
+浏览器中的javascript没有读取文件的能力，在node中能够读取文件
+var fs=require('fs')
+fs.readFile('./data.txt',function(error,data){
+	console.log(data);
+	//会打印出16进制数据，需转化
+	console.log(data.toString())
+})
+
+node中没有dom,bom
+
+node 没全局作用域 ，各个模块内可以重复命名，那怎么取得模块内的数据加载与导出
+
+require(自己写的js模块用相对路径)
+require(fs)   仅适用于核心模块
+
+
+res.setHeader('Content-Type','text/plain;charset=utf-8')     
+charset=utf-8为了防止乱码
+text/plain  普通文本
+text/html  告诉浏览器以html格式渲染
+
+content-type :   www.tool.oschina.net/
